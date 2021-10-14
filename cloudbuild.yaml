@@ -9,4 +9,4 @@ steps:
     entrypoint: /bin/bash
 timeout: 86400s
 options:
-  diskSizeGb: '100'
+  diskSizeGb: '1000'
